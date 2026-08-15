@@ -1,52 +1,117 @@
-# Thiranex Task 1 — Full-Stack Personal Portfolio
+# 👩‍💻 Sania Mujtaba — Full Stack Developer Portfolio
 
-A responsive personal portfolio built with HTML, CSS, JavaScript, Node.js, Express and MongoDB.
+<p align="center">
+  <strong>Personal Portfolio Website</strong>
+</p>
 
-## Features
-- Responsive portfolio design
-- About, skills and projects sections
-- Projects loaded from MongoDB through a REST API
-- Contact form stores messages in MongoDB
-- Mobile navigation
-- GitHub/LinkedIn links
-- Clean, recruiter-friendly UI
+<p align="center">
+  A modern, responsive portfolio showcasing my skills, projects, education, and development experience.
+</p>
 
-## Requirements
-- Node.js 18+
-- MongoDB local installation OR a MongoDB Atlas connection
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js">
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
+</p>
 
-## Run locally
+---
 
-1. Open this folder in VS Code.
-2. Install packages:
-   `npm install`
-3. Create `.env` from `.env.example`.
-4. Set `MONGODB_URI`.
-5. Seed the database:
-   `npm run seed`
-6. Start:
-   `npm run dev`
-7. Open:
-   `http://localhost:5000`
+## 🌐 Portfolio
 
-## Before submission
-Replace the placeholder GitHub/LinkedIn links in `public/index.html`.
-Replace the sample project links in `seed.js`.
-Add your real project descriptions.
-Take screenshots of the working website and keep the GitHub repository public if required by the internship.
+🚀 **Live Demo:** Coming Soon
 
-## Task mapping
-Frontend: HTML/CSS/JavaScript
-Backend: Node.js + Express
-Database: MongoDB
-Integration: REST API + contact form persistence
-Deployment: Optional
+🔗 **GitHub:**  
+https://github.com/sania28
 
-## Personalization completed
-- Added Sania Mujtaba profile photo
-- Added GitHub profile link
-- Added LinkedIn profile link
-- Added education section
-- Added Thiranex internship experience section
-"# thiranex-task1-portfolio" 
-"# thiranex-task1-portfolio" 
+🔗 **LinkedIn:**  
+https://www.linkedin.com/in/sania-mujtaba-20806a394
+
+---
+
+## 📌 About The Project
+
+This is my personal Full Stack Developer portfolio website created to showcase my professional profile, technical skills, projects, education, and development experience.
+
+The portfolio provides a clean and responsive interface that allows visitors to learn about my background, explore my projects, view my technical skills, and get in touch with me.
+
+This project was developed as part of my **Full Stack Development Internship — Task 1 at Thiranex**.
+
+---
+
+## ✨ Features
+
+- 👩‍💻 Professional developer profile
+- 🎨 Modern and clean user interface
+- 📱 Fully responsive design
+- 🛠️ Technical skills section
+- 🚀 Projects showcase
+- 💼 Experience section
+- 🎓 Education section
+- 📧 Contact form
+- 🔗 GitHub integration
+- 🔗 LinkedIn integration
+- 📄 Resume access
+- 🗄️ MongoDB database integration
+- ⚡ Node.js & Express backend
+- 🔐 Environment variable based configuration
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+
+- HTML5
+- CSS3
+- JavaScript
+- React
+- TypeScript
+
+### Backend
+
+- Node.js
+- Express.js
+
+### Database
+
+- MongoDB
+- MongoDB Atlas
+- Mongoose
+
+### Development Tools
+
+- Visual Studio Code
+- Git
+- GitHub
+- npm
+
+---
+
+## 📂 Project Structure
+
+```text
+Thiranex_Task1_Sania_Mujtaba_Portfolio/
+│
+├── models/
+│   └── Contact.js
+│
+├── routes/
+│   └── contact.js
+│
+├── public/
+│   ├── images/
+│   ├── css/
+│   └── js/
+│
+├── server.js
+├── seed.js
+├── package.json
+├── package-lock.json
+├── .gitignore
+└── .env.example
+ 
