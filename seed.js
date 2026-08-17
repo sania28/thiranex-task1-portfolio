@@ -34,11 +34,13 @@ const projects = [
 
 async function seed() {
   try {
-    if (!process.env.MONGODB_URI) {
+    const mongoUri = (process.env.MONGODB_URI || "").trim();
+
+    if (!mongoUri) {
       throw new Error("MONGODB_URI is missing from .env");
     }
 
-    await mongoose.connect(process.env.MONGODB_URI);
+    await mongoose.connect(mongoUri);
 
     console.log("MongoDB Atlas connected successfully.");
 

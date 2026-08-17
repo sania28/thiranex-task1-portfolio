@@ -8,7 +8,12 @@ router.get("/", async (req, res) => {
     const projects = await Project.find().sort({ featured: -1, createdAt: -1 });
     res.json({ success: true, data: projects });
   } catch (error) {
-    res.status(500).json({ success: false, message: "Unable to load projects" });
+    console.error("Failed to load projects from database:", error.message);
+    res.status(500).json({
+      success: false,
+      message: "Unable to load projects from the database.",
+      error: error.message
+    });
   }
 });
 

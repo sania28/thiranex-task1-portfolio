@@ -17,7 +17,12 @@ async function loadProjects() {
     const response = await fetch("/api/projects");
     const result = await response.json();
 
-    if (!result.success || !result.data.length) {
+    if (!response.ok || !result.success) {
+      projectsGrid.innerHTML = "<p class='loading'>Unable to load projects from the database. Check the server logs.</p>";
+      return;
+    }
+
+    if (!result.data.length) {
       projectsGrid.innerHTML = "<p class='loading'>No projects available yet.</p>";
       return;
     }

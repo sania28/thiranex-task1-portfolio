@@ -18,7 +18,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/api/health", (req, res) => {
-  res.json({ success: true, message: "Portfolio API is running" });
+  const dbState = mongoose.connection.readyState;
+  res.json({
+    success: true,
+    message: "Portfolio API is running",
+    database: dbState === 1 ? "connected" : "disconnected"
+  });
 });
 
 app.use("/api/projects", projectRoutes);
@@ -29,16 +34,24 @@ app.get("*splat", (req, res) => {
 });
 
 async function startServer() {
-  try {
-    await mongoose.connect(process.env.MONGODB_URI);
-    console.log("MongoDB connected");
-  } catch (error) {
-    console.warn("MongoDB connection failed:", error.message);
-    console.warn("Running in mock mode - database persistence is disabled");
+  const mongoUri = (process.env.MONGODB_URI || "").trim();
+
+  if (!mongoUri) {
+    console.error("ERROR: MONGODB_URI is not set. Add it to your .env file (see .env.example).");
+    console.error("The API will start, but database features (projects, contact) will be unavailable.");
+  } else {
+    try {
+      await mongoose.connect(mongoUri);
+      console.log("MongoDB connected");
+    } catch (error) {
+      console.error("MongoDB connection FAILED:", error.message);
+      console.error("Database features (projects, contact) will be unavailable.");
+      console.error("Check that MONGODB_URI in .env is correct and the database is reachable.");
+    }
   }
-  
+
   // Start server regardless of MongoDB connection
-  app.listen(PORT, () => {
+  app.listen(PORT, "0.0.0.0", () => {
     console.log(`Portfolio running at http://localhost:${PORT}`);
   });
 }
