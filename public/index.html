@@ -3,152 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sania Mujtaba - Full Stack Developer Portfolio" />
-  <title>Sania Mujtaba | Full Stack Developer</title>
+  <meta name="theme-color" content="#080711" />
+  <meta name="description" content="Sania Mujtaba — Full Stack Developer crafting thoughtful digital experiences." />
+  <title>Sania Mujtaba — Developer & Creative Builder</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
-  <header class="header">
-    <nav class="nav container">
-      <a class="logo" href="#home">SM<span>.</span></a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+  <div class="noise" aria-hidden="true"></div>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Sania Mujtaba home">sania<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
       <div class="nav-links" id="navLinks">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Journey</a><a href="#projects">Projects</a>
+        <a class="nav-contact" href="#contact">Let's talk <span>↗</span></a>
       </div>
     </nav>
   </header>
 
   <main>
     <section class="hero container" id="home">
-      <div class="hero-content">
-        <p class="eyebrow animate-slide-in">FULL STACK DEVELOPER</p>
-        <h1 class="animate-fade-in">Hi, I'm <span>Sania Mujtaba</span>.</h1>
-        <h2 class="animate-slide-up">I build clean, useful &amp; modern web experiences.</h2>
-        <p class="hero-text">
-          Computer Science graduate and Full Stack Developer passionate about building responsive web applications, REST APIs and practical digital products.
-        </p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn secondary" href="#contact">Let's Connect</a>
-          <a class="btn resume" href="/resume.pdf" download>📄 Download Resume</a>
+      <div class="hero-copy reveal">
+        <div class="availability"><span class="pulse-dot"></span> OPEN TO OPPORTUNITIES</div>
+        <p class="hero-kicker">HELLO, I'M SANIA MUJTABA</p>
+        <h1>Turning ideas<br>into <span class="gradient-text">digital reality.</span></h1>
+        <p class="hero-description">I'm a developer who loves building thoughtful, useful and beautiful experiences for the web — from the first pixel to the final API.</p>
+        <div class="hero-cta">
+          <a class="button button-primary" href="#projects">Explore my work <span>↗</span></a>
+          <a class="button button-quiet" href="/resume.pdf" target="_blank" rel="noreferrer">View résumé <span>↓</span></a>
         </div>
-        <div class="socials">
-          <a href="https://github.com/sania28" target="_blank" rel="noreferrer" title="GitHub">🐙 GitHub</a>
-          <a href="https://www.linkedin.com/in/sania-mujtaba-20806a394" target="_blank" rel="noreferrer" title="LinkedIn">💼 LinkedIn</a>
-        </div>
-      </div>
-      <div class="hero-card">
-        <div class="profile-photo-wrap"><img class="profile-photo" src="/images/profile.png" alt="Sania Mujtaba - Full Stack Developer" /></div>
-        <div class="code-card">
-          <span>const</span> developer = {<br>
-          &nbsp;&nbsp;name: <b>"Sania"</b>,<br>
-          &nbsp;&nbsp;focus: <b>"Full Stack"</b>,<br>
-          &nbsp;&nbsp;learning: <b>true</b><br>
-          };
+        <div class="hero-socials">
+          <a href="https://github.com/sania28" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+          <i></i>
+          <a href="https://www.linkedin.com/in/sania-mujtaba-20806a394/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+          <i></i><span class="location-label">Based in India · IST</span>
         </div>
       </div>
+
+      <div class="hero-art reveal" aria-label="Abstract animated 3D artwork">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <div class="orb-core"><div class="orb-shine"></div><span>SM</span></div>
+        <div class="float-chip chip-code"><b>⌘</b> creative code</div>
+        <div class="float-chip chip-stack"><span class="mini-dot"></span> building the web</div>
+        <div class="art-caption"><span>FIG. 01</span><span>IDEAS IN MOTION</span></div>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
     </section>
 
-    <section class="section" id="about">
+    <section class="section about-section" id="about">
       <div class="container">
-        <p class="section-label">01 / ABOUT ME</p>
-        <h2 class="section-title">Turning ideas into working products.</h2>
-        <div class="about-grid">
-          <p>
-            I enjoy creating responsive interfaces, connecting them with APIs,
-            and designing backend systems that are simple and reliable.
-            My current focus is strengthening my skills across frontend,
-            backend and databases.
-          </p>
-          <div class="stats">
-            <div><strong>B.Tech CSE</strong><span>BCET, Durgapur</span></div>
-            <div><strong>React</strong><span>Frontend</span></div>
-            <div><strong>Spring Boot</strong><span>Backend</span></div>
+        <div class="section-top reveal"><span class="section-index">01 / ABOUT</span><span class="section-note">A LITTLE ABOUT ME</span></div>
+        <div class="about-layout">
+          <div class="about-heading reveal"><p class="eyebrow">CURIOUS MIND. BUILDER'S HEART.</p><h2>I love making<br><span class="gradient-text">things work</span><br>beautifully.</h2></div>
+          <div class="about-body reveal">
+            <p class="lead">I'm Sania — a Computer Science & Engineering learner and aspiring full-stack developer with a passion for turning complex ideas into simple digital experiences.</p>
+            <p>I enjoy working across the stack: shaping responsive interfaces, building APIs, connecting databases and polishing the details that make a product feel right. Every project is a chance to learn something new and make something meaningful.</p>
+            <div class="about-facts">
+              <div><strong>01</strong><span>Frontend craft</span></div><div><strong>02</strong><span>Backend logic</span></div><div><strong>03</strong><span>Always learning</span></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="experience">
+    <section class="section skills-section" id="skills">
       <div class="container">
-        <p class="section-label">02 / EXPERIENCE & EDUCATION</p>
-        <h2 class="section-title">Learning, building and growing.</h2>
-        <div class="experience-grid">
-          <article class="experience-card">
-            <span class="date">AUG 2026 – SEP 2026</span>
-            <h3>Full Stack Development Intern</h3>
-            <p class="company">Thiranex</p>
-            <p>Working on practical full-stack projects covering frontend development, backend APIs, databases and responsive web applications.</p>
-          </article>
-          <article class="experience-card">
-            <span class="date">B.TECH · COMPUTER SCIENCE & ENGINEERING</span>
-            <h3>Bengal College of Engineering and Technology</h3>
-            <p class="company">Durgapur, West Bengal</p>
-            <p>Built academic and personal projects across web development, Java, React, Spring Boot, databases and software engineering.</p>
-          </article>
+        <div class="section-top reveal"><span class="section-index">02 / TOOLKIT</span><span class="section-note">TECH I WORK WITH</span></div>
+        <div class="section-heading-row reveal"><h2 class="section-heading">My digital <span class="gradient-text">toolkit.</span></h2><p>Tools are just the beginning.<br>Curiosity does the heavy lifting.</p></div>
+        <div class="skill-grid">
+          <article class="skill-card reveal"><span class="skill-number">01</span><div class="skill-icon">✳</div><h3>Frontend</h3><p>Creating clean, responsive interfaces with a focus on usability and detail.</p><div class="skill-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span></div></article>
+          <article class="skill-card reveal"><span class="skill-number">02</span><div class="skill-icon">⌘</div><h3>Backend</h3><p>Building reliable application logic and RESTful services.</p><div class="skill-tags"><span>Java</span><span>Spring Boot</span><span>Node.js</span><span>Express</span></div></article>
+          <article class="skill-card reveal"><span class="skill-number">03</span><div class="skill-icon">◈</div><h3>Database</h3><p>Working with structured and document data to power useful products.</p><div class="skill-tags"><span>MongoDB</span><span>MySQL</span><span>SQLite</span><span>Firebase</span></div></article>
+          <article class="skill-card reveal"><span class="skill-number">04</span><div class="skill-icon">⌁</div><h3>Tools & workflow</h3><p>Building, testing, collaborating and shipping with confidence.</p><div class="skill-tags"><span>Git</span><span>GitHub</span><span>Postman</span><span>VS Code</span></div></article>
         </div>
       </div>
     </section>
 
-    <section class="section soft" id="skills">
+    <section class="section journey-section" id="experience">
       <div class="container">
-        <p class="section-label">03 / SKILLS</p>
-        <h2 class="section-title">My technical toolkit.</h2>
-        <div class="skills-grid">
-          <article><h3>Frontend</h3><p>HTML5 · CSS3 · JavaScript · React · TypeScript</p></article>
-          <article><h3>Backend</h3><p>Node.js · Express.js · Java · Spring Boot · REST APIs</p></article>
-          <article><h3>Database</h3><p>MongoDB · MySQL · PostgreSQL · Firebase</p></article>
-          <article><h3>Tools</h3><p>Git · GitHub · VS Code · Maven · IntelliJ IDEA</p></article>
+        <div class="section-top reveal"><span class="section-index">03 / THE JOURNEY</span><span class="section-note">LEARNING BY DOING</span></div>
+        <div class="section-heading-row reveal"><h2 class="section-heading">A path of <span class="gradient-text">progress.</span></h2><p>Small steps, real projects<br>and continuous growth.</p></div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><div class="timeline-date">2026</div><div class="timeline-marker"></div><div class="timeline-content"><span class="timeline-type">INTERNSHIP</span><h3>Full Stack Development Intern</h3><p class="timeline-place">Thiranex · Remote / Project-based</p><p>Worked on practical web development tasks, building responsive interfaces and full-stack project features.</p></div></article>
+          <article class="timeline-item reveal"><div class="timeline-date">2026</div><div class="timeline-marker"></div><div class="timeline-content"><span class="timeline-type">INTERNSHIP</span><h3>Web Development Intern</h3><p class="timeline-place">RabTech · Remote</p><p>Strengthened JavaScript, DOM manipulation, API integration and responsive dashboard development through hands-on tasks.</p></div></article>
+          <article class="timeline-item reveal"><div class="timeline-date">2022 — 2026</div><div class="timeline-marker"></div><div class="timeline-content"><span class="timeline-type">EDUCATION</span><h3>B.Tech — Computer Science & Engineering</h3><p class="timeline-place">Bengal College of Engineering & Technology · MAKAUT</p><p>Building a foundation in computer science while exploring software development through academic and personal projects.</p></div></article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="projects">
+    <section class="section projects-section" id="projects">
       <div class="container">
-        <p class="section-label">04 / PROJECTS</p>
-        <h2 class="section-title">Things I've built.</h2>
+        <div class="section-top reveal"><span class="section-index">04 / SELECTED WORK</span><span class="section-note">THINGS I'VE BUILT</span></div>
+        <div class="section-heading-row reveal"><h2 class="section-heading">Made with <span class="gradient-text">purpose.</span></h2><p>A selection of experiments,<br>ideas and shipped projects.</p></div>
         <div class="projects-grid" id="projectsGrid">
-          <p class="loading">Loading projects from database...</p>
+          <article class="project-card project-featured"><div class="project-visual visual-shop"><span class="visual-orbit"></span><span class="visual-word">SHOP<span> MART</span></span><span class="visual-caption">COMMERCE / 01</span></div><div class="project-info"><div class="project-meta"><span>FULL STACK</span><span>01</span></div><h3>ShopMart</h3><p>A modern MERN e-commerce experience with product browsing and an admin workflow.</p><div class="project-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div><div class="project-actions"><a href="https://github.com/sania28/E-Commerce-Web-Application" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://e-commerce-web-application-1-yhf9.onrender.com" target="_blank" rel="noreferrer">Live demo ↗</a></div></div></article>
+          <article class="project-card"><div class="project-visual visual-reflect"><span class="reflect-sun"></span><span class="visual-word">reflect<span>ai</span></span><span class="visual-caption">JOURNAL / 02</span></div><div class="project-info"><div class="project-meta"><span>AI / WEB APP</span><span>02</span></div><h3>ReflectAI</h3><p>A private reflection journal with AI-powered insights and Firebase services.</p><div class="project-tags"><span>Gemini</span><span>Firebase</span><span>React</span></div><div class="project-actions"><a href="https://github.com/sania28/reflectai-private-journal" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></article>
+          <article class="project-card"><div class="project-visual visual-recipe"><span class="recipe-plate"></span><span class="visual-word">Recipe<span>Hub</span></span><span class="visual-caption">DISCOVERY / 03</span></div><div class="project-info"><div class="project-meta"><span>WEB APP</span><span>03</span></div><h3>RecipeHub</h3><p>A recipe discovery capstone with a responsive interface and a clean browsing experience.</p><div class="project-tags"><span>JavaScript</span><span>CSS</span><span>Web</span></div><div class="project-actions"><a href="https://recipehub-capstone.onrender.com" target="_blank" rel="noreferrer">Live demo ↗</a></div></div></article>
+          <article class="project-card"><div class="project-visual visual-blog"><span class="blog-lines"></span><span class="visual-word">Blog<span>Nest</span></span><span class="visual-caption">CONTENT / 04</span></div><div class="project-info"><div class="project-meta"><span>FULL STACK</span><span>04</span></div><h3>Blog Platform</h3><p>A blogging platform with a dedicated frontend and backend API.</p><div class="project-tags"><span>JavaScript</span><span>Node.js</span><span>MongoDB</span></div><div class="project-actions"><a href="https://github.com/sania28/Blog-Platform-with-Comments" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://blog-platform-frontend-kftg.onrender.com" target="_blank" rel="noreferrer">Live demo ↗</a></div></div></article>
+          <article class="project-card"><div class="project-visual visual-task"><span class="task-check">✓</span><span class="visual-word">Task<span>Flow</span></span><span class="visual-caption">PRODUCTIVITY / 05</span></div><div class="project-info"><div class="project-meta"><span>WEB APP</span><span>05</span></div><h3>TaskFlow</h3><p>A task management interface designed to keep everyday work organised.</p><div class="project-tags"><span>React</span><span>JavaScript</span><span>CSS</span></div><div class="project-actions"><a href="https://taskflow-frontend-5qhi.onrender.com" target="_blank" rel="noreferrer">Live demo ↗</a></div></div></article>
+          <article class="project-card"><div class="project-visual visual-api"><span class="api-brackets">{ }</span><span class="visual-word">API<span>Client</span></span><span class="visual-caption">JAVASCRIPT / 06</span></div><div class="project-info"><div class="project-meta"><span>FRONTEND</span><span>06</span></div><h3>Dynamic API Client</h3><p>A dynamic JavaScript client demonstrating API requests and interactive data rendering.</p><div class="project-tags"><span>JavaScript</span><span>REST API</span><span>DOM</span></div><div class="project-actions"><a href="https://github.com/sania28/dynamic-js-api-client" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://dynamic-js-api-client.onrender.com" target="_blank" rel="noreferrer">Live demo ↗</a></div></div></article>
         </div>
       </div>
     </section>
 
-    <section class="section soft" id="contact">
-      <div class="container contact-grid">
-        <div>
-          <p class="section-label">05 / CONTACT</p>
-          <h2 class="section-title">Let's build something useful.</h2>
-          <p class="contact-copy">
-            Have a project, internship opportunity or collaboration in mind?
-            Send me a message.
-          </p>
+    <section class="contact-section" id="contact">
+      <div class="container contact-wrap">
+        <div class="section-top reveal"><span class="section-index">05 / GET IN TOUCH</span><span class="section-note">HAVE A GOOD ONE IN MIND?</span></div>
+        <div class="contact-layout">
+          <div class="contact-copy reveal"><p class="eyebrow">LET'S CREATE SOMETHING</p><h2>Have an idea?<br><span class="gradient-text">Let's talk.</span></h2><p>I'm open to entry-level opportunities, internships and collaborations. If you have something interesting in mind, I'd love to hear about it.</p><a class="email-link" href="https://github.com/sania28" target="_blank" rel="noreferrer">Find me on GitHub ↗</a></div>
+          <form class="contact-form reveal" id="contactForm"><label for="name">YOUR NAME</label><input id="name" name="name" type="text" placeholder="What should I call you?" required><label for="email">EMAIL ADDRESS</label><input id="email" name="email" type="email" placeholder="you@example.com" required><label for="message">YOUR MESSAGE</label><textarea id="message" name="message" rows="4" placeholder="Tell me a little about it..." required></textarea><button class="button button-primary" type="submit">Send message <span>↗</span></button><p id="formStatus" class="form-status" role="status"></p></form>
         </div>
-        <form class="contact-form" id="contactForm">
-          <label>Name<input type="text" name="name" required placeholder="Your name"></label>
-          <label>Email<input type="email" name="email" required placeholder="you@example.com"></label>
-          <label>Message<textarea name="message" required rows="5" placeholder="Tell me about your idea..."></textarea></label>
-          <button class="btn primary" type="submit">Send Message</button>
-          <p id="formStatus" class="form-status"></p>
-        </form>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-inner">
-      <p>© 2026 Sania Mujtaba. Built with HTML, CSS, JavaScript, Node.js &amp; MongoDB.</p>
-      <a href="#home">Back to top ↑</a>
-    </div>
-  </footer>
-
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home">sania<span>.</span></a><p>Designed with curiosity. Built with code.</p><span>© 2026 SANIA MUJTABA</span><a href="#home" class="back-top">BACK TO TOP ↑</a></div></footer>
   <script src="/js/app.js"></script>
 </body>
 </html>
