@@ -25,16 +25,20 @@ const revealObserver=new IntersectionObserver(entries=>{
 },{threshold:.12});
 document.querySelectorAll(".reveal").forEach(el=>revealObserver.observe(el));
 
-// Gentle pointer parallax on the 3D hero artwork.
-const heroArt=document.querySelector(".hero-art");
-if(heroArt&&window.matchMedia("(pointer:fine)").matches){
-  heroArt.addEventListener("pointermove",event=>{
-    const rect=heroArt.getBoundingClientRect();
-    const x=(event.clientX-rect.left)/rect.width-.5;
-    const y=(event.clientY-rect.top)/rect.height-.5;
-    heroArt.style.transform=`rotateY(${x*5}deg) rotateX(${-y*5}deg)`;
+// Interactive eye tracking: the character looks toward the pointer.
+const girlStage=document.getElementById("girlStage");
+const girlCharacter=document.getElementById("girlCharacter");
+const pupils=document.querySelectorAll(".girl-eye i");
+if(girlStage&&girlCharacter){
+  girlStage.addEventListener("pointermove",event=>{
+    const rect=girlStage.getBoundingClientRect();
+    const x=((event.clientX-rect.left)/rect.width-.5)*2;
+    const y=((event.clientY-rect.top)/rect.height-.5)*2;
+    pupils.forEach(pupil=>pupil.style.transform=`translate(${Math.max(-5,Math.min(5,x*5))}px,${Math.max(-4,Math.min(4,y*4))}px)`);
+    girlCharacter.style.setProperty("--look-x",x.toFixed(2));
+    girlCharacter.style.setProperty("--look-y",y.toFixed(2));
   });
-  heroArt.addEventListener("pointerleave",()=>heroArt.style.transform="");
+  girlStage.addEventListener("pointerleave",()=>pupils.forEach(pupil=>pupil.style.transform=""));
 }
 
 // Subtle ambient star particles, with a reduced-motion fallback.
