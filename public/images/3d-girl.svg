@@ -1,63 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 650" role="img" aria-labelledby="title desc">
-<title id="title">3D-style girl pointing right</title><desc id="desc">A friendly stylized 3D cartoon developer girl in a lavender hoodie pointing to the right.</desc>
-<defs>
- <linearGradient id="hood" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e4caff"/><stop offset=".48" stop-color="#a879ef"/><stop offset="1" stop-color="#6542ad"/></linearGradient>
- <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe2d2"/><stop offset=".6" stop-color="#f3b99f"/><stop offset="1" stop-color="#cf806f"/></linearGradient>
- <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#51405f"/><stop offset=".45" stop-color="#211a32"/><stop offset="1" stop-color="#0e0b19"/></linearGradient>
- <linearGradient id="jeans" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9cc8f1"/><stop offset="1" stop-color="#476caa"/></linearGradient>
- <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="13"/></filter>
- <radialGradient id="cheek"><stop stop-color="#f48e9f" stop-opacity=".65"/><stop offset="1" stop-color="#f48e9f" stop-opacity="0"/></radialGradient>
-</defs>
-<ellipse cx="286" cy="604" rx="205" ry="25" fill="#8c55e8" opacity=".22" filter="url(#shadow)"/>
-<circle cx="292" cy="286" r="235" fill="#9e73ef" opacity=".10"/>
-<!-- hair behind -->
-<path d="M142 290C99 137 184 45 310 53c135 8 186 109 155 245l-15 184c-8 66-62 89-95 40l-166-1c-55 35-91-5-75-77z" fill="url(#hair)"/>
-<path d="M165 174c-3-88 65-132 142-126 86 6 130 62 120 140-34-25-54-59-65-91-33 49-105 68-197 77z" fill="#302440"/>
-<!-- body hoodie -->
-<path d="M151 342c24-52 77-78 143-80 75-2 133 26 158 91l43 169c-71 56-272 62-373 0z" fill="url(#hood)"/>
-<path d="M231 272c25 35 94 45 132 0l33 45c-32 61-156 61-197 0z" fill="#e7d5ff" opacity=".9"/>
-<path d="M211 325c-35 47-51 126-48 195l70 20 37-154z" fill="#b98af2"/>
-<path d="M387 321c40 44 66 123 67 198l-68 24-45-153z" fill="#8158c6"/>
-<!-- neck -->
-<path d="M269 247h75v72c-20 27-58 27-78 0z" fill="url(#skin)"/>
-<!-- face -->
-<path d="M204 142c0-79 48-117 111-111 70 7 107 53 99 133l-12 74c-11 54-53 91-104 89-54-2-93-42-99-96z" fill="url(#skin)"/>
-<!-- hair fringe -->
-<path d="M194 178c-16-90 30-153 109-158 71-4 116 42 118 108-30-5-53-27-65-56-24 33-83 55-146 51 5 22 0 41-16 55z" fill="url(#hair)"/>
-<path d="M205 174c-5 53-4 108 26 143-61-20-84-86-71-153 8-42 28-71 56-89-15 32-15 67-11 99z" fill="#30233f"/>
-<path d="M393 143c31 49 34 116 10 168-10 22-27 39-49 48 31-49 25-116 19-164z" fill="#171323"/>
-<!-- eyes -->
-<ellipse cx="269" cy="206" rx="13" ry="19" fill="#fff"/><ellipse cx="350" cy="206" rx="13" ry="19" fill="#fff"/>
-<ellipse cx="273" cy="210" rx="7" ry="13" fill="#34253c"/><ellipse cx="354" cy="210" rx="7" ry="13" fill="#34253c"/>
-<circle cx="276" cy="204" r="4" fill="#fff"/><circle cx="357" cy="204" r="4" fill="#fff"/>
-<path d="M251 181q18-14 34-2M334 179q18-12 33 2" fill="none" stroke="#4c3140" stroke-width="6" stroke-linecap="round"/>
-<ellipse cx="245" cy="242" rx="25" ry="15" fill="url(#cheek)"/><ellipse cx="371" cy="242" rx="25" ry="15" fill="url(#cheek)"/>
-<path d="M302 245q8 8 16 0" fill="none" stroke="#c77d72" stroke-width="4" stroke-linecap="round"/>
-<path d="M293 266q22 19 45-1" fill="none" stroke="#a94e65" stroke-width="5" stroke-linecap="round"/>
-<!-- arms: left hand resting -->
-<path d="M187 350c-39 27-68 72-76 126-3 23 10 38 29 33 18-5 25-30 32-50l48-65z" fill="url(#hood)"/>
-<path d="M124 489c-10 13-21 22-33 30-9 7-4 19 8 18 12-1 28-13 40-24l22-29-21-17z" fill="url(#skin)"/>
-<!-- pointing arm right -->
-<path d="M388 347c35-24 69-34 107-42l34 26c-34 28-75 48-119 60z" fill="url(#hood)"/>
-<path d="M475 316c26-12 45-23 68-36 16-9 29-14 43-11 9 2 11 12 4 18l-26 17c17-3 34-6 45-2 11 4 8 16-4 20l-64 19c-26 8-48 17-72 25z" fill="url(#skin)"/>
-<path d="M539 284l31-16c8-4 17 1 15 8-1 4-7 8-13 12l-30 18" fill="none" stroke="#cf8c7c" stroke-width="3" stroke-linecap="round"/>
-<!-- jeans crossed legs -->
-<path d="M177 515c66-34 159-29 224 6 36 20 63 50 61 82-2 25-27 34-58 25l-165-43c-63-17-96-37-62-70z" fill="url(#jeans)"/>
-<path d="M189 538c-40 13-66 40-70 69-3 25 23 38 53 30l142-41c42-12 63-33 47-55-23-32-112-22-172-3z" fill="#729bd0"/>
-<path d="M379 548c-20 15-42 33-59 51" stroke="#b9d9f6" stroke-width="5" opacity=".5" fill="none"/>
-<path d="M187 558c-15 11-28 22-36 36M408 564c-16 12-29 25-41 39" stroke="#d4e9ff" stroke-width="4" opacity=".4" fill="none"/>
-<!-- sneakers -->
-<path d="M95 596c20-9 48-10 73-1l55 23c18 8 22 27 3 34H111c-27 0-39-17-16-56z" fill="#f4edff"/>
-<path d="M373 594c25-9 55-6 78 8l43 28c14 10 9 25-12 25H373c-29 0-37-33 0-61z" fill="#f8f3ff"/>
-<path d="M111 640h107M391 643h93" stroke="#b9a5db" stroke-width="5" stroke-linecap="round"/>
-<!-- hoodie pocket + details -->
-<path d="M260 424q45 28 91 0l20 66q-66 31-130 0z" fill="#9368d0" opacity=".8"/>
-<path d="M301 322v52m22-52v52" stroke="#f2e5ff" stroke-width="4" stroke-linecap="round"/>
-<path d="M310 389l-11 12 11 12 11-12z" fill="#fff" opacity=".9"/>
-<!-- floating arrow -->
-<path d="M442 118c51-43 94-45 137-16" fill="none" stroke="#d7a8ff" stroke-width="11" stroke-linecap="round"/>
-<path d="M560 73l28 27-38 8" fill="none" stroke="#f4d7ff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M445 118c50-40 94-43 136-17" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="3" stroke-linecap="round"/>
-<path d="M112 122l-15-18m43 1 4-23" stroke="#e3c7ff" stroke-width="6" stroke-linecap="round"/>
-<circle cx="475" cy="205" r="5" fill="#d5a6eb"/><circle cx="104" cy="310" r="5" fill="#9ee7ee"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 700"><defs><linearGradient id="h" x2="1" y2="1"><stop stop-color="#171020"/><stop offset=".5" stop-color="#60416c"/><stop offset="1" stop-color="#171020"/></linearGradient><linearGradient id="s" x2="1" y2="1"><stop stop-color="#ffe8da"/><stop offset="1" stop-color="#d28f86"/></linearGradient><linearGradient id="p" x2="1" y2="1"><stop stop-color="#e0c8ff"/><stop offset=".5" stop-color="#9b70dc"/><stop offset="1" stop-color="#56378c"/></linearGradient><radialGradient id="b"><stop stop-color="#f08da1" stop-opacity=".5"/><stop offset="1" stop-color="#f08da1" stop-opacity="0"/></radialGradient></defs>
+<ellipse cx="260" cy="670" rx="160" ry="20" fill="#000" opacity=".35"/>
+<path d="M100 300C65 105 170 30 280 35c150 6 194 122 150 300l-5 180c-55 100-110 50-170 75-100 40-180-45-145-150z" fill="url(#h)"/>
+<path d="M155 175c0-90 75-135 150-120 83 16 119 86 100 175l-18 110c-10 65-65 105-124 92-60-13-93-68-94-128z" fill="url(#s)"/>
+<path d="M145 210C115 80 218 20 320 48c72 20 102 76 95 135-34-35-72-53-110-47-38 5-64 41-112 64z" fill="url(#h)"/><path d="M160 174q35-90 125-100-35 38-27 85-47-29-98 35z" fill="#392443"/>
+<path d="M145 185q-35 105 8 265M420 150q42 145 4 300" fill="none" stroke="#9a72a8" stroke-width="10" stroke-linecap="round" opacity=".5"/>
+<ellipse cx="130" cy="280" rx="17" ry="28" fill="#e7ad9e"/><ellipse cx="412" cy="280" rx="17" ry="28" fill="#d99c91"/>
+<path d="M205 220q25-18 50 0M315 220q25-18 50 0" fill="none" stroke="#704754" stroke-width="7" stroke-linecap="round"/>
+<ellipse cx="230" cy="255" rx="17" ry="23" fill="#fff"/><ellipse cx="340" cy="255" rx="17" ry="23" fill="#fff"/><ellipse cx="237" cy="260" rx="10" ry="15" fill="#302039"/><ellipse cx="347" cy="260" rx="10" ry="15" fill="#302039"/><circle cx="240" cy="252" r="4" fill="#fff"/><circle cx="350" cy="252" r="4" fill="#fff"/>
+<ellipse cx="205" cy="305" rx="28" ry="15" fill="url(#b)"/><ellipse cx="365" cy="305" rx="28" ry="15" fill="url(#b)"/><path d="M267 335q26 24 52-1" fill="none" stroke="#a94f6a" stroke-width="7" stroke-linecap="round"/>
+<path d="M245 395h75v78h-75z" fill="url(#s)"/>
+<path d="M120 470q70-65 150-55 100-5 155 65l55 185H45z" fill="url(#p)"/><path d="M205 430q50 42 100 0l50 42-70 70-70-65z" fill="#c6a8ee"/><path d="M248 460l35 65 35-65" fill="none" stroke="#f3e8ff" stroke-width="9" stroke-linecap="round"/><path d="M278 520v115M310 520v115" stroke="#f5eaff" stroke-width="6" stroke-linecap="round"/>
+<path d="M140 490q-45 25-60 90l-25 90q-9 30 20 38l22 7q25 7 37-22l60-125z" fill="url(#p)"/>
+<path d="M350 485q55-30 86 8l38 45 35-67q13-23 33-10 17 12 5 33l-48 90q-15 26-43 11l-85-49z" fill="url(#p)"/>
+<path d="M500 470l32-42q14-17 28-4 12 11-1 26l-27 34M527 439l24-36q12-17 25-6 12 10 0 25l-25 34" fill="url(#s)" stroke="#c98583" stroke-width="3"/>
+<path d="M135 185q-65-60-70-8-3 39 68 37-62 42-20 62 38 18 55-67z" fill="#a77ae4" stroke="#d8c1ff" stroke-width="5"/><circle cx="146" cy="207" r="13" fill="#e7d6ff"/>
+<text x="285" y="610" text-anchor="middle" font-family="Arial" font-size="34" font-weight="bold" fill="#f5eaff">&lt;/&gt;</text>
+<path d="M455 135l12-25 12 25 25 12-25 12-12 25-12-25-25-12z" fill="#ddc7ff"/><path d="M75 360l8-17 8 17 17 8-17 8-8 17-8-17-17-8z" fill="#d9c5ff"/></svg>
