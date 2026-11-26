@@ -94,3 +94,17 @@
 @media(max-width:900px){.hero-portrait{height:420px;width:min(320px,75%)}}
 @media(max-width:680px){.hero-portrait-wrap{height:430px;transform:none;transform-origin:center}.hero-portrait{height:390px;width:min(290px,76%)}.hero-photo-tag{right:4%;bottom:5px}}
 @media(prefers-reduced-motion:reduce){.hero-portrait{animation:none}}
+
+
+/* 3D-inspired girl hero illustration */
+.girl-hero{overflow:visible;isolation:isolate}
+.girl-hero:before{content:"";position:absolute;width:430px;height:430px;border-radius:50%;background:radial-gradient(circle,rgba(167,139,250,.24),rgba(167,139,250,.07) 54%,transparent 72%);filter:blur(10px);z-index:-1}
+.girl-illustration{width:min(100%,560px);height:auto;max-height:570px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 28px 34px rgba(0,0,0,.32));animation:girlFloat 5.5s ease-in-out infinite;transform-origin:50% 65%}
+.girl-float-chip{position:absolute;z-index:2;padding:10px 14px;border:1px solid rgba(211,194,255,.24);background:rgba(20,17,37,.88);backdrop-filter:blur(12px);border-radius:30px;color:#e4d9ff;font:.62rem var(--mono);letter-spacing:.7px;box-shadow:0 12px 36px rgba(0,0,0,.25);animation:chipFloat 4s ease-in-out infinite}
+.girl-chip-code{top:14%;right:-2%;transform:rotate(4deg)}
+.girl-chip-note{bottom:13%;left:0;animation-delay:-2s}
+@keyframes girlFloat{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-13px) rotate(1deg)}}
+@keyframes chipFloat{0%,100%{translate:0 0}50%{translate:0 -8px}}
+@media(max-width:900px){.girl-illustration{max-height:460px}.girl-chip-code{right:4%}.girl-chip-note{left:5%}}
+@media(max-width:600px){.girl-hero{height:390px;margin-top:-15px}.girl-illustration{max-height:390px}.girl-float-chip{font-size:.52rem;padding:8px 10px}.girl-chip-code{top:7%;right:0}.girl-chip-note{bottom:5%;left:0}}
+@media(prefers-reduced-motion:reduce){.girl-illustration,.girl-float-chip{animation:none}}
