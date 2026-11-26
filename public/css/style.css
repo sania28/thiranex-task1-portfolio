@@ -51,3 +51,22 @@
 @media(max-width:900px){.girl-stage{min-height:420px}.girl-character{transform:scale(.9)}.about-photo-wrap{padding:0}}
 @media(max-width:680px){.girl-stage{height:390px;min-height:390px;transform:scale(.9);transform-origin:center}.girl-orbit-a{width:320px}.girl-orbit-b{width:300px;height:290px}.about-photo-frame{max-width:300px}.about-layout{gap:30px}}
 @media(prefers-reduced-motion:reduce){.girl-character,.girl-spark{animation:none}}
+
+
+/* Requested 3D girl reference image */
+.girl-reference-image{
+  position:relative;
+  z-index:3;
+  display:block;
+  width:min(300px,72%);
+  height:430px;
+  object-fit:contain;
+  object-position:center bottom;
+  filter:drop-shadow(0 28px 30px rgba(0,0,0,.38));
+  transform:translate3d(calc(var(--look-x,0) * 8px),calc(var(--look-y,0) * 5px),0) rotateY(calc(var(--look-x,0) * 5deg));
+  transition:transform .18s ease-out;
+  animation:girlImageFloat 5s ease-in-out infinite;
+}
+@keyframes girlImageFloat{0%,100%{translate:0 0}50%{translate:0 -10px}}
+@media(max-width:680px){.girl-reference-image{height:360px;width:min(260px,78%)}}
+@media(prefers-reduced-motion:reduce){.girl-reference-image{animation:none;transition:none}}
