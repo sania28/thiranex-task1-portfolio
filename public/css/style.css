@@ -82,3 +82,15 @@
 @media(max-width:900px){.about-visual{max-width:620px;margin-inline:auto}.about-girl{min-height:300px}.about-girl img{height:310px}}
 @media(max-width:520px){.about-visual{gap:4px}.about-girl{min-height:250px}.about-girl img{height:260px}.about-personal .about-photo{border-radius:12px}.about-personal .photo-caption{font-size:.48rem;letter-spacing:.7px}}
 @media(prefers-reduced-motion:reduce){.about-girl img{animation:none}}
+
+/* Hero portrait inspired by the reference portfolio */
+.hero-portrait-wrap{perspective:none;overflow:visible}
+.hero-portrait-wrap:before{display:none}
+.hero-portrait-glow{position:absolute;width:360px;height:420px;border-radius:48%;background:radial-gradient(ellipse,rgba(167,139,250,.28),rgba(230,166,232,.1) 52%,transparent 74%);filter:blur(22px)}
+.hero-portrait{position:relative;z-index:1;display:block;width:min(360px,78%);height:490px;object-fit:cover;object-position:center 28%;border-radius:48% 48% 18px 18px;border:1px solid rgba(193,176,255,.38);box-shadow:0 28px 70px rgba(0,0,0,.4),0 0 45px rgba(167,139,250,.16);animation:portraitFloat 6s ease-in-out infinite}
+.hero-photo-tag{position:absolute;z-index:2;bottom:10px;right:3%;padding:11px 15px;border:1px solid rgba(193,176,255,.3);border-radius:8px;background:rgba(13,10,25,.82);backdrop-filter:blur(12px);font:.58rem var(--mono);letter-spacing:1.2px;color:#d9c8ff}
+@keyframes portraitFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+.about-layout{grid-template-columns:1fr}
+@media(max-width:900px){.hero-portrait{height:420px;width:min(320px,75%)}}
+@media(max-width:680px){.hero-portrait-wrap{height:430px;transform:none;transform-origin:center}.hero-portrait{height:390px;width:min(290px,76%)}.hero-photo-tag{right:4%;bottom:5px}}
+@media(prefers-reduced-motion:reduce){.hero-portrait{animation:none}}
